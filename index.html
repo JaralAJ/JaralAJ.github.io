@@ -1,247 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Engineering portfolio website showcasing projects, research, skills, and contact information."
-    />
-    <title>Your Name | Engineering Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="logo" href="#home">Your Name</a>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-label="Open navigation"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#research">Research</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering portfolio website showcasing projects, research, skills, and contact information.">
+  <title>Your Name | Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home">Your Name</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-content">
-          <p class="eyebrow">Mechanical & Aerospace Engineering Student</p>
-          <h1>
-            Hi, I am Jaral. I love building things that move, think, and
-            explore.
-          </h1>
-          <p class="hero-text">
-            I am a sophmore at Case Western Reserve University studying
-            Mechanical and Aerospace Engineering, with a minor in Computer
-            Science. I am fascinated by robotics, autonomous systems, and space
-            explotation. I also care deeply about STEM outreach and helping
-            younger students discover the excitement of hands-on science. When I
-            am not working on a project, you will probably find me playing
-            soccer, doing photography, or skateboarding.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="assets/resume.pdf"
-              >Download Resume</a
-            >
-          </div>
-        </div>
-        <div class="hero-panel" aria-label="Portfolio highlights">
-          <div>
-            <span class="metric">4+</span>
-            <span>Featured projects</span>
-          </div>
-          <div>
-            <span class="metric">2</span>
-            <span>Research areas</span>
-          </div>
-          <div>
-            <span class="metric">10+</span>
-            <span>Technical tools</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Engineer in training with a builder's mindset.</h2>
-        </div>
-        <div class="about-grid">
-          <p>
-            Write a short paragraph about your major, school, technical
-            interests, and what kind of engineering problems you enjoy solving.
-            Keep this focused and specific. Recruiters should quickly understand
-            what you are good at and what kind of role you are looking for.
-          </p>
-          <p>
-            Example: I enjoy designing systems that connect hardware, software,
-            and data. My recent work includes microcontroller projects,
-            mechanical design, simulation, and data analysis for engineering
-            experiments.
-          </p>
-        </div>
-      </section>
-
-      <section class="section alt" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Selected engineering work.</h2>
-        </div>
-        <div class="card-grid">
-          <article class="project-card">
-            <div class="project-image">Project Image</div>
-            <div class="card-content">
-              <h3>Autonomous Robot Project</h3>
-              <p>
-                Briefly describe the goal, your role, and the result. Mention
-                measurable outcomes if you have them.
-              </p>
-              <div class="tags">
-                <span>Python</span>
-                <span>Arduino</span>
-                <span>Sensors</span>
-              </div>
-              <a href="#" aria-label="View Autonomous Robot Project"
-                >View project</a
-              >
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-image">Project Image</div>
-            <div class="card-content">
-              <h3>Data Analysis Dashboard</h3>
-              <p>
-                Explain what data you analyzed, what tools you used, and what
-                insight or decision the project supported.
-              </p>
-              <div class="tags">
-                <span>Python</span>
-                <span>pandas</span>
-                <span>Visualization</span>
-              </div>
-              <a href="#" aria-label="View Data Analysis Dashboard"
-                >View project</a
-              >
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-image">Project Image</div>
-            <div class="card-content">
-              <h3>Mechanical Design Prototype</h3>
-              <p>
-                Describe the design problem, prototype process, CAD/simulation
-                tools, and what you learned from testing.
-              </p>
-              <div class="tags">
-                <span>CAD</span>
-                <span>Prototyping</span>
-                <span>Testing</span>
-              </div>
-              <a href="#" aria-label="View Mechanical Design Prototype"
-                >View project</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="research">
-        <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Research and technical investigations.</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <p class="timeline-date">2026</p>
-            <div>
-              <h3>Research Topic or Lab Project</h3>
-              <p>
-                Describe the research question, your contribution, the
-                tools/methods used, and any poster, paper, presentation, or
-                result you can share.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">2025</p>
-            <div>
-              <h3>Course-Based Engineering Study</h3>
-              <p>
-                Add a second research-style project here. This can be a class
-                project if it involved experimentation, modeling, simulation, or
-                technical writing.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section alt" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Tools I use to build and analyze systems.</h2>
-        </div>
-        <div class="skills-grid">
-          <div>
-            <h3>Programming</h3>
-            <p>Python, JavaScript, C++, MATLAB</p>
-          </div>
-          <div>
-            <h3>Engineering Tools</h3>
-            <p>SolidWorks, Arduino, Simulink, Excel</p>
-          </div>
-          <div>
-            <h3>Data & Web</h3>
-            <p>pandas, NumPy, HTML, CSS, Git, GitHub</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Let's connect.</h2>
-        </div>
-        <p>
-          I am currently looking for internships, research opportunities, and
-          engineering projects where I can contribute.
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Engineering Student</p>
+        <h1>Hi, I'm Your Name. I build practical engineering projects and research-driven systems.</h1>
+        <p class="hero-text">
+          I am an engineering student interested in robotics, embedded systems, software, and applied research.
+          This portfolio highlights the projects, experiments, and technical work I am most proud of.
         </p>
-        <div class="contact-links">
-          <a href="mailto:your.email@example.com">Email</a>
-          <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
-          <a href="https://github.com/yourusername">GitHub</a>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="assets/resume.pdf">Download Resume</a>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="hero-panel" aria-label="Portfolio highlights">
+        <div>
+          <span class="metric">4+</span>
+          <span>Featured projects</span>
+        </div>
+        <div>
+          <span class="metric">2</span>
+          <span>Research areas</span>
+        </div>
+        <div>
+          <span class="metric">10+</span>
+          <span>Technical tools</span>
+        </div>
+      </div>
+    </section>
 
-    <footer class="footer">
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Engineer in training with a builder's mindset.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          Write a short paragraph about your major, school, technical interests, and what kind of engineering
+          problems you enjoy solving. Keep this focused and specific. Recruiters should quickly understand what
+          you are good at and what kind of role you are looking for.
+        </p>
+        <p>
+          Example: I enjoy designing systems that connect hardware, software, and data. My recent work includes
+          microcontroller projects, mechanical design, simulation, and data analysis for engineering experiments.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected engineering work.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="project-card">
+          <div class="project-image">Project Image</div>
+          <div class="card-content">
+            <h3>Autonomous Robot Project</h3>
+            <p>
+              Briefly describe the goal, your role, and the result. Mention measurable outcomes if you have them.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Arduino</span>
+              <span>Sensors</span>
+            </div>
+            <a href="#" aria-label="View Autonomous Robot Project">View project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">Project Image</div>
+          <div class="card-content">
+            <h3>Data Analysis Dashboard</h3>
+            <p>
+              Explain what data you analyzed, what tools you used, and what insight or decision the project supported.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>pandas</span>
+              <span>Visualization</span>
+            </div>
+            <a href="#" aria-label="View Data Analysis Dashboard">View project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">Project Image</div>
+          <div class="card-content">
+            <h3>Mechanical Design Prototype</h3>
+            <p>
+              Describe the design problem, prototype process, CAD/simulation tools, and what you learned from testing.
+            </p>
+            <div class="tags">
+              <span>CAD</span>
+              <span>Prototyping</span>
+              <span>Testing</span>
+            </div>
+            <a href="#" aria-label="View Mechanical Design Prototype">View project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2>Research and technical investigations.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <p class="timeline-date">2026</p>
+          <div>
+            <h3>Research Topic or Lab Project</h3>
+            <p>
+              Describe the research question, your contribution, the tools/methods used, and any poster, paper,
+              presentation, or result you can share.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">2025</p>
+          <div>
+            <h3>Course-Based Engineering Study</h3>
+            <p>
+              Add a second research-style project here. This can be a class project if it involved experimentation,
+              modeling, simulation, or technical writing.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I use to build and analyze systems.</h2>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <h3>Programming</h3>
+          <p>Python, JavaScript, C++, MATLAB</p>
+        </div>
+        <div>
+          <h3>Engineering Tools</h3>
+          <p>SolidWorks, Arduino, Simulink, Excel</p>
+        </div>
+        <div>
+          <h3>Data & Web</h3>
+          <p>pandas, NumPy, HTML, CSS, Git, GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's connect.</h2>
+      </div>
       <p>
-        &copy; <span id="year"></span> Your Name. Built with HTML, CSS, and
-        GitHub Pages.
+        I am currently looking for internships, research opportunities, and engineering projects where I can contribute.
       </p>
-    </footer>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, and GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
