@@ -236,16 +236,111 @@ h3 {
   margin-bottom: 32px;
 }
 
-.about-grid {
+.about-layout {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
   gap: 28px;
+  align-items: start;
+}
+
+.about-carousel {
+  margin-top: -8px;
+}
+
+.about-copy {
   color: var(--muted);
   font-size: 1.03rem;
 }
 
-.about-grid p {
-  margin: 0;
+.about-copy p {
+  margin: 0 0 18px;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-carousel {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.carousel-track {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide.is-active {
+  display: block;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: min(380px, 50vw);
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-slide figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.carousel-button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--accent-strong);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.carousel-button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: #c2cbd2;
+  cursor: pointer;
+}
+
+.carousel-dot.is-active {
+  background: var(--accent);
 }
 
 .card-grid {
@@ -265,11 +360,24 @@ h3 {
   display: grid;
   min-height: 190px;
   place-items: center;
+  overflow: hidden;
   background:
     linear-gradient(135deg, rgba(11, 107, 117, 0.14), rgba(218, 96, 64, 0.16)),
     #dfe8ea;
   color: var(--accent-strong);
   font-weight: 800;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-image-zoom {
+  object-position: center 28%;
+  transform: scale(1.08);
 }
 
 .card-content {
@@ -397,6 +505,10 @@ h3 {
     display: block;
   }
 
+  .carousel-slide img {
+    height: min(320px, 70vw);
+  }
+
   .nav-links {
     position: absolute;
     top: 72px;
@@ -430,7 +542,7 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .about-grid,
+  .about-layout,
   .card-grid,
   .skills-grid {
     grid-template-columns: 1fr;
