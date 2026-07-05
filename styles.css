@@ -1,5 +1,5 @@
 :root {
-  --bg: #f7f4ee;
+  --bg: #f9f8f5;
   --surface: #ffffff;
   --surface-muted: #eef3f6;
   --text: #17212b;
@@ -35,7 +35,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(247, 244, 238, 0.92);
+  background: rgba(245, 243, 240, 0.92);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
@@ -182,8 +182,7 @@ h3 {
   gap: 14px;
 }
 
-.hero-panel div,
-.hero-image-card {
+.hero-panel > div:not(.hero-image-card) {
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -195,14 +194,21 @@ h3 {
   display: grid;
   place-items: center;
   min-height: 220px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 
 .hero-image-card img {
-  width: min(100%, 220px);
-  height: auto;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  min-height: 280px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
+  border: 6px solid white;
 }
 
 .metric {
