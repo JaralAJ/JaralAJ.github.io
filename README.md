@@ -28,7 +28,7 @@ The site highlights my engineering projects, research experience, technical skil
 
 ## How To Update
 
-Edit `main_page.html` to change the text, links, projects, research entries, and contact information.
+Edit `index.html` to change the text, links, projects, research entries, and contact information.
 
 Edit `styles.css` to change colors, spacing, and layout.
 
