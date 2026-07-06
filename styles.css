@@ -142,6 +142,31 @@ a {
   color: var(--muted);
 }
 
+.video-section {
+  display: grid;
+  gap: 20px;
+}
+
+.video-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.video-card h2 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+}
+
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 12px;
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
@@ -486,6 +511,42 @@ h3 {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 700;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #f9fbfb;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.status-pill::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.status-pill.ongoing {
+  border-color: rgba(40, 167, 69, 0.24);
+  background: rgba(40, 167, 69, 0.12);
+  color: #2f7d4f;
+}
+
+.status-pill.past {
+  border-color: rgba(91, 103, 115, 0.24);
+  background: rgba(91, 103, 115, 0.1);
+  color: #5b6773;
 }
 
 .timeline {
