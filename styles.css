@@ -301,6 +301,9 @@ h3 {
   display: grid;
   place-items: center;
   min-height: 220px;
+  max-width: 340px;
+  width: 100%;
+  justify-self: center;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -308,8 +311,9 @@ h3 {
 }
 
 .hero-image-card img {
-  width: min(100%, 340px);
+  width: 100%;
   max-width: 340px;
+  max-height: 340px;
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 50%;
