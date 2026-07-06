@@ -313,7 +313,6 @@ h3 {
 .hero-image-card img {
   width: 100%;
   max-width: 340px;
-  max-height: 340px;
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 50%;
@@ -470,7 +469,6 @@ h3 {
   display: grid;
   min-height: 190px;
   place-items: center;
-  overflow: hidden;
   background:
     linear-gradient(135deg, rgba(11, 107, 117, 0.14), rgba(218, 96, 64, 0.16)),
     #dfe8ea;
@@ -481,8 +479,9 @@ h3 {
 .project-image img {
   display: block;
   width: 100%;
-  height: clamp(180px, 24vw, 220px);
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .project-image-zoom {
