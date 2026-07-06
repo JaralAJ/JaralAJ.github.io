@@ -395,7 +395,7 @@ h3 {
 .carousel-slide img {
   display: block;
   width: 100%;
-  height: auto;
+  height: min(380px, 50vw);
   max-height: 420px;
   object-fit: cover;
   border-radius: 10px;
