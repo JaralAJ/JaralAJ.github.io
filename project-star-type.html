@@ -31,13 +31,22 @@
         <p class="eyebrow">Personal Project</p>
         <h1>Star Type Prediction &amp; Analysis</h1>
         <p>
-          This project explored astronomical classification using machine
-          learning and data analysis to understand how stellar properties can be
-          predicted from observable features.
+          This project investigates the defining physical relationships that
+          govern stellar evolution and classification. By leveraging machine
+          learning pipelines and advanced data visualization techniques on
+          multi-variable stellar data, I built a predictive model to classify
+          celestial bodies and empirically validate the structured patterns of
+          stellar dynamics.
         </p>
+        <!-- Button Github-->
+        <a class="button primary" href="https://github.com/JaralAJ/Star-Class-Prediction-Analysis"
+        target="_blank" 
+        rel="noopener noreferrer"> 
+        Github Repository</a>
+
+        <!-- Button Back to Main-->
         <a class="button secondary" href="index.html#research"
-          >← Back to main page</a
-        >
+          >← Back to main page</a>
       </section>
 
       <section class="detail-content">
@@ -46,16 +55,27 @@
             <h2>What I did</h2>
             <ul class="detail-list">
               <li>
-                Built a predictive workflow for classifying star types from
-                tabular astronomical data.
+                Engineered an end-to-end data pipeline in Python to ingest,
+                clean, and standardize astrophysical attributes, including
+                absolute temperature, relative luminosity, relative radius, and
+                absolute magnitude.
               </li>
               <li>
-                Compared model approaches and evaluated performance using
-                structured analysis.
+                Implemented categorical feature encoding to map non-numerical
+                variables, such as spectral classes and complex star colors,
+                into a simplified, numerically structured format optimized for
+                machine learning algorithms.
               </li>
               <li>
-                Used the project to connect data science with astronomy
-                research.
+                Trained and deployed an XGBoost classification model utilizing
+                Google Colab, achieving 100% predictive accuracy in identifying
+                star types ranging from Brown Dwarfs to Hypergiants.
+              </li>
+              <li>
+                Designed interactive exploratory data visualizations in Tableau
+                to map fundamental astronomical relationships, such as the
+                Hertzsprung-Russell (magnitude vs. temperature) and luminosity
+                vs. radius distributions.
               </li>
             </ul>
           </article>
@@ -68,11 +88,94 @@
             </ul>
           </article>
         </div>
+
+        <!-- Visualization Carousel -->
         <article class="detail-card detail-image-card">
-          <img
-            src="assets/hertzsprung russell diagram.jpg"
-            alt="Hertzsprung-Russell diagram project"
-          />
+          <h2>Visualizations</h2>
+          <div class="detail-carousel" aria-label="Visualization image carousel">
+            <div class="carousel-track">
+              <figure class="carousel-slide is-active">
+                <img
+                  src="assets\temperature_vs_avg_mv.png"
+                  alt="Temperature vs Average Absolute Magnitude"
+                />
+                <figcaption>Temperature vs Average Absolute Magnitude</figcaption>
+              </figure>
+
+              <!-- Add more slides here -->
+              <figure class="carousel-slide">
+                <img
+                  src="assets\Star_Color_Av_Abs_MV.png"
+                  alt="Star Color Average Absolute Magnitude"
+                />
+                <figcaption>Star Color Average Absolute Magnitude</figcaption>
+              </figure>
+
+              <figure class="carousel-slide">
+                <img
+                  src="assets\distribution of MP star type stringes.png"
+                  alt="Distribution of Star Types"
+                />
+                <figcaption>Distribution of Star Types</figcaption>
+              </figure>
+
+              <figure class="carousel-slide">
+                <img
+                  src="assets\distribution of spectral class.png"
+                  alt="Distribution of Spectral Class"
+                />
+                <figcaption>Distribution of Spectral Class</figcaption>
+              </figure>
+            </div>
+
+            <div class="carousel-controls">
+              <button
+                class="carousel-button"
+                type="button"
+                data-direction="prev"
+                aria-label="Show previous image"
+              >
+                ←
+              </button>
+
+              <div class="carousel-dots" aria-label="Carousel navigation">
+                <button
+                  class="carousel-dot is-active"
+                  type="button"
+                  data-slide="0"
+                  aria-label="Go to slide 1"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  type="button"
+                  data-slide="1"
+                  aria-label="Go to slide 2"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  type="button"
+                  data-slide="2"
+                  aria-label="Go to slide 3"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  type="button"
+                  data-slide="3"
+                  aria-label="Go to slide 4"
+                ></button>
+              </div>
+
+              <button
+                class="carousel-button"
+                type="button"
+                data-direction="next"
+                aria-label="Show next image"
+              >
+                →
+              </button>
+            </div>
+          </div>
+
           <p>
             Applying data-driven methods to astronomy and stellar
             classification.
