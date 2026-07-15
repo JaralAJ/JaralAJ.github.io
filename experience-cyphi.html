@@ -32,7 +32,13 @@
         <span class="status-pill ongoing">Ongoing</span>
         <h1>Research Assistantship — CyPhi Lab</h1>
         <p>
-          As a Research Assistant at the Cybernetics and Physical Intelligence Laboratory (CyPhi Lab) under the Human Fusions Institute at Case Western Reserve University, I focused on bridging the gap between physical and virtual robotic control. Working with a hyper-redundant, cable-driven robotic tentacle arm, I developed real-time position estimation and control pipelines to improve tracking precision and reliability for next-generation soft robotic systems.
+          As a Research Assistant at the Cybernetics and Physical Intelligence
+          Laboratory (CyPhi Lab) under the Human Fusions Institute at Case
+          Western Reserve University, I focused on bridging the gap between
+          physical and virtual robotic control. Working with a hyper-redundant,
+          cable-driven robotic tentacle arm, I developed real-time position
+          estimation and control pipelines to improve tracking precision and
+          reliability for next-generation soft robotic systems.
         </p>
         <a class="button secondary" href="index.html#projects"
           >← Back to main page</a
@@ -45,33 +51,187 @@
             <h2>What I worked on</h2>
             <ul class="detail-list">
               <li>
-                Engineered position-estimation and control systems for a hyper-redundant, cable-driven robotic tentacle arm using Dynamixel smart actuators.
+                Engineered position-estimation and control systems for a
+                hyper-redundant, cable-driven robotic tentacle arm using
+                Dynamixel smart actuators.
               </li>
               <li>
-                Developed automated Python scripts within VS Code to optimize the robotic homing process and accurately parameterize cable-position constraints.
+                Developed automated Python scripts within VS Code to optimize
+                the robotic homing process and accurately parameterize
+                cable-position constraints.
               </li>
               <li>
-                Synchronized physical arm movements with a virtual environment in real time, utilizing MuJoCo (Google DeepMind's advanced physics simulator) to perfectly mirror physical actions using torque controls.
+                Synchronized physical arm movements with a virtual environment
+                in real time, utilizing MuJoCo (Google DeepMind's advanced
+                physics simulator) to perfectly mirror physical actions using
+                torque controls.
               </li>
-              <li>Fused motion-capture ground truth and cable-length data through an Extended Kalman Filter (EKF) and initiated the deployment of embedded bend sensors for high-precision, infrastructure-independent orientation tracking.
+              <li>
+                Fused motion-capture ground truth and cable-length data through
+                an Extended Kalman Filter (EKF) and initiated the deployment of
+                embedded bend sensors for high-precision,
+                infrastructure-independent orientation tracking.
               </li>
             </ul>
           </article>
-          <article class="detail-card">
-            <h2>Skills used</h2>
-            <ul class="detail-list">
-              <li>Kalman filtering and state estimation</li>
-              <li>Control systems analysis</li>
-              <li>Data interpretation and technical documentation</li>
-            </ul>
+          <article
+            class="detail-card detail-carousel"
+            aria-label="Skills used carousel"
+          >
+            <h2>Photo Gallery</h2>
+            <div class="carousel-track">
+              <figure class="carousel-slide">
+                <img
+                  src="assets/IMG_6472.JPG"
+                  alt="Arm with Motion Capture Markers"
+                />
+                <figcaption>Arm with Motion Capture Markers</figcaption>
+              </figure>
+              <figure class="carousel-slide is-active">
+                <img
+                  src="assets/2026-06_13_125112.png"
+                  alt="Model in MuJoCo Physics Engine"
+                />
+                <figcaption>Model in MuJoCo Physics Engine</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img
+                  src="assets/Horizontal_Spirob_Home.JPG"
+                  alt="Full spiral"
+                />
+                <figcaption>Full Spiral</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img
+                  src="assets/Screenshot 2026-06-03 111713 (1).png"
+                  alt="Vicon Nexus"
+                />
+                <figcaption>Vicon Nexus Motion Capture Tracking</figcaption>
+              </figure>
+            </div>
+
+            <div class="carousel-controls">
+              <button
+                class="carousel-button"
+                type="button"
+                data-direction="prev"
+                aria-label="Show previous image"
+              >
+                ←
+              </button>
+
+              <div
+                class="carousel-dots"
+                aria-label="Skills carousel navigation"
+              >
+                <button
+                  class="carousel-dot is-active"
+                  type="button"
+                  data-slide="0"
+                  aria-label="Go to image 1"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  type="button"
+                  data-slide="1"
+                  aria-label="Go to image 2"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  type="button"
+                  data-slide="2"
+                  aria-label="Go to image 3"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  type="button"
+                  data-slide="3"
+                  aria-label="Go to image 4"
+                ></button>
+              </div>
+
+              <button
+                class="carousel-button"
+                type="button"
+                data-direction="next"
+                aria-label="Show next image"
+              >
+                →
+              </button>
+            </div>
           </article>
         </div>
-        <article class="detail-card detail-image-card">
-          <img src="assets/chyphi.JPG" alt="CyPhi Lab research work" />
-          <p>
-            Research in cybernetics and physical intelligence at Case Western
-            Reserve University.
-          </p>
+
+        <article
+          class="detail-card detail-carousel"
+          data-autoplay="false"
+          aria-label="CyPhi lab demo videos"
+        >
+          <h2>Demo videos</h2>
+          <div class="carousel-track">
+            <figure class="carousel-slide is-active">
+              <video
+                class="carousel-video"
+                controls
+                playsinline
+                preload="metadata"
+              >
+                <source src="assets/spirob_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>Motion Control Demo</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <video
+                class="carousel-video"
+                controls
+                playsinline
+                preload="metadata"
+              >
+                <source
+                  src="assets/All_15_points_sin_xml.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>Live IR Marker Tracking in MuJoCo</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-controls">
+            <button
+              class="carousel-button"
+              type="button"
+              data-direction="prev"
+              aria-label="Show previous video"
+            >
+              ←
+            </button>
+
+            <div class="carousel-dots" aria-label="Video carousel navigation">
+              <button
+                class="carousel-dot is-active"
+                type="button"
+                data-slide="0"
+                aria-label="Go to video 1"
+              ></button>
+              <button
+                class="carousel-dot"
+                type="button"
+                data-slide="1"
+                aria-label="Go to video 2"
+              ></button>
+            </div>
+
+            <button
+              class="carousel-button"
+              type="button"
+              data-direction="next"
+              aria-label="Show next video"
+            >
+              →
+            </button>
+          </div>
         </article>
       </section>
     </main>
