@@ -399,10 +399,11 @@ h3 {
 
 .carousel-slide {
   display: none;
-  height: min(380px, 50vw);   /* ✅ fixed height, matches old img max-height */
+  height: min(380px, 50vw);
   max-height: 420px;
   border-radius: 10px;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .carousel-slide.is-active {
@@ -417,7 +418,7 @@ h3 {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 85%;
+  max-height: 90%;
   border-radius: 10px;
 }
 
@@ -426,7 +427,7 @@ h3 {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 85%;
+  max-height: 90%;
   border-radius: 10px;
   background: #000;
 }
