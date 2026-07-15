@@ -399,35 +399,40 @@ h3 {
 
 .carousel-slide {
   display: none;
+  height: min(380px, 50vw);   /* ✅ fixed height, matches old img max-height */
+  max-height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .carousel-slide.is-active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-slide img {
   display: block;
-  width: 100%;
-  height: min(380px, 50vw);
-  max-height: 420px;
-  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 85%;
   border-radius: 10px;
 }
 
 .carousel-slide video {
   display: block;
-  width: 100%;
-  height: min(380px, 50vw);
-  max-height: 420px;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 85%;
   border-radius: 10px;
   background: #000;
 }
 
-.detail-carousel .carousel-slide img {
-  height: min(440px, 55vw);
-  max-height: 500px;
-  object-fit: contain;
+.detail-carousel .carousel-slide video {
+  max-height: min(440px, 55vw);
 }
 
 .about-carousel img,
@@ -435,11 +440,6 @@ h3 {
 .detail-carousel img,
 .detail-carousel video {
   border-radius: 10px;
-}
-
-.detail-carousel .carousel-slide video {
-  height: min(440px, 55vw);
-  max-height: 500px;
 }
 
 .detail-carousel h2 {
