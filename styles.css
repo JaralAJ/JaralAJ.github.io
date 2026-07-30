@@ -368,6 +368,10 @@ h3 {
   margin-top: -8px;
 }
 
+.about-carousel-home {
+  margin-top: 0;
+}
+
 .about-copy {
   color: var(--muted);
   font-size: 1.03rem;
@@ -442,6 +446,16 @@ h3 {
 .detail-carousel img,
 .detail-carousel video {
   border-radius: 10px;
+}
+
+.about-carousel-home .carousel-slide {
+  height: min(460px, 56vw);
+  max-height: 520px;
+}
+
+.about-layout-home {
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 1.08fr);
+  gap: 34px;
 }
 
 .detail-carousel h2 {
