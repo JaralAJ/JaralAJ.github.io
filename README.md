@@ -4,7 +4,7 @@ This is my personal engineering portfolio website, hosted with GitHub Pages.
 
 ## Live Site
 
-[https://jaralaj.github.io/](https://jaralarroyojefferson.me/)
+https://jaralarroyojefferson.me/
 
 ## About
 
