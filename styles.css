@@ -292,7 +292,7 @@ h3 {
 }
 
 .button.secondary:hover {
-  background: rgba(11, 107, 117, 0.08);
+  background: rgba(116, 140, 171, 0.12);
 }
 
 .hero-panel {
@@ -715,7 +715,7 @@ h3 {
 }
 
 .contact-links a:hover {
-  background: rgba(11, 107, 117, 0.08);
+  background: rgba(116, 140, 171, 0.12);
 }
 
 .footer {
