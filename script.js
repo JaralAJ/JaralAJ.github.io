@@ -31,9 +31,27 @@ carousels.forEach((carousel) => {
   const carouselButtons = Array.from(
     carousel.querySelectorAll(".carousel-button"),
   );
+  const carouselCounter = carousel.querySelector(".carousel-counter");
 
   if (carouselSlides.length === 0) {
     return;
+  }
+
+  // Frame each photo over a blurred copy of itself so letterboxing isn't blank.
+  if (carousel.hasAttribute("data-backdrop")) {
+    carouselSlides.forEach((slide) => {
+      const img = slide.querySelector(":scope > img");
+
+      if (!img) {
+        return;
+      }
+
+      const media = document.createElement("div");
+      media.className = "carousel-media";
+      media.style.setProperty("--slide-bg", `url("${img.src}")`);
+      img.replaceWith(media);
+      media.append(img);
+    });
   }
 
   let activeIndex = Math.max(
@@ -51,6 +69,10 @@ carousels.forEach((carousel) => {
     carouselDots.forEach((dot, dotIndex) => {
       dot.classList.toggle("is-active", dotIndex === activeIndex);
     });
+
+    if (carouselCounter) {
+      carouselCounter.textContent = `${activeIndex + 1} / ${carouselSlides.length}`;
+    }
   };
 
   carouselButtons.forEach((button) => {

@@ -20,7 +20,7 @@
   <body>
     <header class="site-header">
       <nav class="nav">
-        <a class="logo" href="#home">🌌 Jaral Arroyo-Jefferson 🚀</a>
+        <a class="logo" href="#home">Jaral Arroyo-Jefferson</a>
         <button
           class="nav-toggle"
           type="button"
@@ -45,10 +45,10 @@
       <section class="hero" id="home">
         <div class="hero-content">
           <p class="eyebrow">INTRODUCTION</p>
-          <h2>
+          <h1>
             I’m Jaral Arroyo-Jefferson, an engineering student building the
             future of space exploration!
-          </h2>
+          </h1>
           <p class="hero-text">
             Engineering student interested in aerospace, robotics, autonomous
             systems, data science, and applied research. This portfolio
@@ -75,14 +75,25 @@
               alt="Jaral Arroyo-Jefferson headshot"
             />
           </div>
-          <div>
-            <span class="metric">4+</span>
-            <span>Featured projects</span>
-          </div>
-          <div>
-            <span class="metric">10+</span>
-            <span>Technical tools</span>
-          </div>
+          <ul class="hero-facts">
+            <li>
+              <span class="fact-label">Studying</span>
+              <span class="fact-value"
+                >Mechanical &amp; Aerospace Engineering + CS minor, Case
+                Western Reserve University</span
+              >
+            </li>
+            <li>
+              <span class="fact-label">Research</span>
+              <span class="fact-value"
+                >CyPhi Lab · AGU &amp; APS Presenter</span
+              >
+            </li>
+            <li>
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">English &amp; Spanish</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -126,6 +137,7 @@
           <div
             class="about-carousel about-carousel-home"
             aria-label="About me image carousel"
+            data-backdrop
           >
             <div class="carousel-track">
               <figure class="carousel-slide is-active">
@@ -251,92 +263,7 @@
               >
                 ←
               </button>
-              <div class="carousel-dots" aria-label="Carousel navigation">
-                <button
-                  class="carousel-dot is-active"
-                  type="button"
-                  data-slide="0"
-                  aria-label="Go to slide 1"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="1"
-                  aria-label="Go to slide 2"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="2"
-                  aria-label="Go to slide 3"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="3"
-                  aria-label="Go to slide 4"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="4"
-                  aria-label="Go to slide 5"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="5"
-                  aria-label="Go to slide 6"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="6"
-                  aria-label="Go to slide 7"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="7"
-                  aria-label="Go to slide 8"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="8"
-                  aria-label="Go to slide 9"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="9"
-                  aria-label="Go to slide 10"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="10"
-                  aria-label="Go to slide 11"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="11"
-                  aria-label="Go to slide 12"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="12"
-                  aria-label="Go to slide 13"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  type="button"
-                  data-slide="13"
-                  aria-label="Go to slide 14"
-                ></button>
-              </div>
+              <span class="carousel-counter" aria-live="polite">1 / 14</span>
               <button
                 class="carousel-button"
                 type="button"
@@ -449,7 +376,7 @@
         </div>
         <div class="card-grid">
           <article class="project-card">
-            <div class="project-image">
+            <div class="project-image project-image-contain">
               <img
                 src="assets/hertzsprung%20russell%20diagram.jpg"
                 alt="Hertzsprung-Russell diagram"
@@ -477,7 +404,7 @@
           </article>
 
           <article class="project-card">
-            <div class="project-image">
+            <div class="project-image project-image-contain">
               <img
                 src="assets/Youtube_Thumbnail.png"
                 alt="YouTube thumbnail for meteorite and bolide report"
@@ -543,27 +470,44 @@
         <div class="skills-grid">
           <div>
             <h3>Engineering & Design</h3>
-            <p>
-              SolidWorks, Fusion 360, 3D Printing, Laser Cutting, CNC Machining
-            </p>
+            <div class="tags">
+              <span>SolidWorks</span>
+              <span>Fusion 360</span>
+              <span>3D Printing</span>
+              <span>Laser Cutting</span>
+              <span>CNC Machining</span>
+            </div>
           </div>
           <div>
             <h3>Programming & Data</h3>
-            <p>
-              Python, MATLAB, Machine Learning, Pandas, Matplotlib, Tableau,
-              HTML, CSS
-            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>MATLAB</span>
+              <span>Machine Learning</span>
+              <span>Pandas</span>
+              <span>Matplotlib</span>
+              <span>Tableau</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
           </div>
           <div>
             <h3>Software & Tools</h3>
-            <p>
-              Git, Visual Studio Code, Microsoft Office Suite, Adobe Creative
-              Suite
-            </p>
+            <div class="tags">
+              <span>Git</span>
+              <span>Visual Studio Code</span>
+              <span>Microsoft Office Suite</span>
+              <span>Adobe Creative Suite</span>
+              <span>Claude Code</span>
+              <span>Codex</span>
+            </div>
           </div>
           <div>
             <h3>Languages</h3>
-            <p>Bilingual in English and Spanish</p>
+            <div class="tags">
+              <span>English</span>
+              <span>Spanish</span>
+            </div>
           </div>
         </div>
       </section>
