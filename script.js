@@ -90,11 +90,44 @@ carousels.forEach((carousel) => {
 
   showSlide(activeIndex);
 
-  const shouldAutoplay = carousel.dataset.autoplay !== "false";
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  const shouldAutoplay =
+    carousel.dataset.autoplay !== "false" &&
+    !prefersReducedMotion &&
+    carouselSlides.length > 1;
 
-  if (shouldAutoplay && carouselSlides.length > 1) {
-    setInterval(() => {
+  if (shouldAutoplay) {
+    let intervalId = setInterval(() => {
       showSlide(activeIndex + 1);
     }, 5000);
+
+    const controls = carousel.querySelector(".carousel-controls");
+
+    if (controls) {
+      const pauseButton = document.createElement("button");
+      pauseButton.type = "button";
+      pauseButton.className = "carousel-button carousel-pause";
+      pauseButton.textContent = "⏸";
+      pauseButton.setAttribute("aria-label", "Pause slideshow");
+
+      pauseButton.addEventListener("click", () => {
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+          pauseButton.textContent = "▶";
+          pauseButton.setAttribute("aria-label", "Play slideshow");
+        } else {
+          intervalId = setInterval(() => {
+            showSlide(activeIndex + 1);
+          }, 5000);
+          pauseButton.textContent = "⏸";
+          pauseButton.setAttribute("aria-label", "Pause slideshow");
+        }
+      });
+
+      controls.appendChild(pauseButton);
+    }
   }
 });

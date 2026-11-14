@@ -294,6 +294,10 @@ h3 {
   background: var(--accent-strong);
 }
 
+.button:active {
+  transform: scale(0.97);
+}
+
 .button.secondary {
   color: var(--accent-text);
 }
@@ -423,22 +427,28 @@ h3 {
   border-radius: var(--radius-md);
   padding: 0;
   background: #fff;
+  height: min(380px, 50vw);
+  max-height: 420px;
 }
 
 .carousel-slide {
-  display: none;
-  height: min(380px, 50vw);
-  max-height: 420px;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  padding-bottom: 10px;
-}
-
-.carousel-slide.is-active {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  padding-bottom: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.carousel-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .carousel-slide img {
@@ -504,10 +514,9 @@ h3 {
   object-fit: contain;
 }
 
-.about-carousel-home .carousel-slide {
+.about-carousel-home .carousel-track {
   height: min(460px, 56vw);
   max-height: 520px;
-  margin: 0;
 }
 
 .about-layout-home {
@@ -573,6 +582,10 @@ h3 {
 .carousel-button:hover {
   border-color: var(--accent);
   color: var(--accent-text);
+}
+
+.carousel-button:active {
+  transform: scale(0.93);
 }
 
 .carousel-counter {
@@ -828,10 +841,18 @@ h3 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .project-card,
   .project-card:hover {
     transition: none;
     transform: none;
+  }
+
+  .carousel-slide {
+    transition: none;
   }
 }
 
@@ -840,8 +861,8 @@ h3 {
     display: block;
   }
 
-  .carousel-slide,
-  .about-carousel-home .carousel-slide {
+  .carousel-track,
+  .about-carousel-home .carousel-track {
     height: min(380px, 85vw);
   }
 
